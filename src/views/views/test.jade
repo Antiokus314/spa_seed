@@ -1,0 +1,14 @@
+extends ../partials/layout
+
+block js
+  != js('../application.js')
+block css
+  != css('../application.css')
+
+block content
+  h1 This is the test jade file
+  div
+    p Welcome to my simple SPA builder
+  div
+    | Writing something new here &nbsp
+    a(href="#{url('../')}") Home page
