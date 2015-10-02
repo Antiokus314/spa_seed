@@ -104,7 +104,7 @@ The asset load paths are defined in **tasks/config.js**. If you wish to add more
   * must be utilized with escaped html
   * see the sample **index.jade** and **views/test.jade** file for usage
 
-* asset_path
+* asset_path [Function]
   * can be used in both views and asset files
   * returns the path of the asset file requested (requires file extension)
   * useful for referencing images (which have various different methods of tagging)
