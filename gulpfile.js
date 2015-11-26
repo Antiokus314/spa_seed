@@ -7,10 +7,21 @@ var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
 var runSeq = require('run-sequence');
 
-fs.readdirSync('./tasks').forEach(function(task) {
-  if (task.indexOf('.task.js') != -1) {
-    require(path.join(__dirname, 'tasks', task))(gulp, plugins, runSeq);
-  }
+var AppContainer = require('easy-di').create('main', {
+  locals: {},
+  pkg: require('./package'),
+  gulp: gulp,
+  plugins: plugins,
+  runSeq: runSeq
 });
+
+AppContainer.loadList(require('./config'));
+AppContainer.loadDir(path.resolve(__dirname, 'tasks'));
+
+//fs.readdirSync('./tasks').forEach(function(task) {
+//  if (task.indexOf('.task.js') != -1) {
+//    require(path.join(__dirname, 'tasks', task))(gulp, plugins, runSeq);
+//  }
+//});
 
 gulp.task('default', ['server']);

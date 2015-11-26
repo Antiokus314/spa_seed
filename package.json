@@ -1,6 +1,6 @@
 {
   "name": "spa_seed",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
     "csswring": "^4.0.0",
     "debug": "^2.2.0",
     "del": "^2.0.2",
+    "easy-di": "^1.0.2",
     "express": "^4.13.3",
     "gulp": "^3.9.0",
     "gulp-changed": "^1.3.0",

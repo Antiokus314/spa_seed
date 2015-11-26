@@ -1,7 +1,7 @@
 var del = require('del');
-
-module.exports = function(gulp) {
+exports.inject = 'gulp';
+exports.load = function(gulp) {
   gulp.task('clean', function() {
     return del(['build']);
   });
-};
+}
