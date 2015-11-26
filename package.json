@@ -1,9 +1,10 @@
 {
   "name": "spa_seed",
   "version": "0.0.1",
-  "description": "",
+  "description": "SPA build system - gulp, livereload, mincer (asset-pipeline), production builds - I got you",
   "main": "index.js",
   "scripts": {
+    "start": "gulp server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

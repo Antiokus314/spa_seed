@@ -3,11 +3,12 @@ process.env.DEBUG = 'gulp:server'
 
 var fs = require('fs');
 var path = require('path');
+var gulp = require('gulp');
 
 var AppContainer = require('easy-di').create('main', {
   locals: {},
   pkg: require('./package'),
-  gulp: require('gulp'),
+  gulp: gulp,
   plugins: require('gulp-load-plugins')(),
   runSeq: require('run-sequence')
 });
