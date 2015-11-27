@@ -1,6 +1,6 @@
 {
   "name": "spa_seed",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "SPA build system - gulp, livereload, mincer (asset-pipeline), production builds - I got you",
   "main": "index.js",
   "scripts": {
